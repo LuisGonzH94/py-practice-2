@@ -40,7 +40,7 @@ coin = random.choice(coins) # fix this
 print("Coin flip:", coin)
 
 # 9. Ask the user for a number and print out a random number from 1 to the number the user chooses.
-hint: use int(input("..."))
+# hint: use int(input("..."))
 user_number = int(input("Enter a number ")) # fix this
 random_number = random.randint(1, user_number) # fix this, random number from 1 to user_number
 print(f"Random number from 1 to {user_number}: {random_number}")
