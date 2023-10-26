@@ -31,9 +31,11 @@ elif user_choice == "rock" and computer_choice == "scissors":
 elif user_choice == "paper" and computer_choice == "rock":
   print("paper beats rock")
   print("You win!")
-else:
+elif user_choice == "scissors" and computer_choice == "paper":
   print("scissors beats paper")
-  print("You lose!")  
+  print("You win!")
+else:
+  print("choose again")  
  
 # rock beats scissors
 # paper beats rock
