@@ -10,7 +10,7 @@ rps = ['rock','paper','scissors']
 
 # 2. Create a variable called user_choice that takes input from the user and stores it.
 #   Make sure the user enters rock, paper, or scissors.
-user_choice = user_guess = input("[rock, paper, scissors] SHOOT") # fix this, user input, hint: use input("...")
+user_choice = user_guess = input("Choose [rock, paper, scissors]: ") # fix this, user input, hint: use input("...")
 
 # 3. Create a variable called computer_choice that randomly chooses from rps.
 computer_choice = random.choice(rps) # fix this, random choice from rps
@@ -25,20 +25,16 @@ if user_choice == computer_choice:
   print("It's a tie!")
 # write stuff here
 
-if user_choice == "rock" and computer_choice == "scissors":
+elif user_choice == "rock" and computer_choice == "scissors":
   print("rock beats scissors")
+  print("You win!")
+elif user_choice == "paper" and computer_choice == "rock":
+  print("paper beats rock")
   print("You win!")
 else:
   print("scissors beats paper")
   print("You lose!")  
-
-if user_choice == "paper" and computer_choice == "rock":
-  print("paper beats rock")
-  print("You win!")
-else:
-  print(" beats scissors")
-  print("You lose!")  
-
+ 
 # rock beats scissors
 # paper beats rock
 # scissors beats paper
